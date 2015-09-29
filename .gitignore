@@ -1,1 +1,8 @@
 node_modules
+
+#Jetbrains IDE files
+.idea
+*.iml
+
+#Mac files
+.DS_Store
