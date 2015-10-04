@@ -64,7 +64,12 @@ angular.module('ngPinchZoom', [])
       element.on('touchmove', touchmoveHandler);
       element.on('touchend', touchendHandler);
     };
-    image.src = attrs.src;
+
+    if (attrs.ngSrc) {
+      image.src = attrs.ngSrc;
+    } else {
+      image.src = attrs.src;
+    }
 
     /**
      * @param {object} evt
